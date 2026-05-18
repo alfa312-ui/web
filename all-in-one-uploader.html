@@ -1,0 +1,212 @@
+<html lang="id"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All In One - Uploader</title>
+  <meta name="description" content="Unggah file anda ke berbagai website hanya dengan 1 alat.">
+  <meta property="og:title" content="All In One - Uploader">
+  <meta property="og:image" content="https://files.catbox.moe/qsm4fp.png">
+  <meta property="og:url" content="https://huggingface.co/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://files.catbox.moe/qsm4fp.png">
+  <link rel="icon" href="https://files.catbox.moe/qsm4fp.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script><link id="via_inject_css_blocker" type="text/css" rel="stylesheet" href="https://smail.my.id/via_inject_blocker.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .fade-in-up {
+      animation: fadeInUp 0.5s ease-out;
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .spinner {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #3b82f6;
+      border-radius: 50%;
+      width: 24px; height: 24px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.block{display:block}.flex{display:flex}.hidden{display:none}.min-h-screen{min-height:100vh}.w-full{width:100%}.max-w-md{max-width:28rem}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-auto{overflow:auto}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-lg{border-radius:0.5rem}.border{border-width:1px}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity, 1))}.bg-green-600{--tw-bg-opacity:1;background-color:rgb(22 163 74 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-200{transition-duration:200ms}.hover\:bg-blue-700:hover{--tw-bg-opacity:1;background-color:rgb(29 78 216 / var(--tw-bg-opacity, 1))}.hover\:bg-green-700:hover{--tw-bg-opacity:1;background-color:rgb(21 128 61 / var(--tw-bg-opacity, 1))}</style><style type="text/css" id="__via_marker__"></style><style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.mb-1{margin-bottom:0.25rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.block{display:block}.flex{display:flex}.hidden{display:none}.min-h-screen{min-height:100vh}.w-full{width:100%}.max-w-md{max-width:28rem}.flex-col{flex-direction:column}.items-center{align-items:center}.justify-center{justify-content:center}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-auto{overflow:auto}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-lg{border-radius:0.5rem}.border{border-width:1px}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity, 1))}.bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity, 1))}.bg-green-600{--tw-bg-opacity:1;background-color:rgb(22 163 74 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-200{transition-duration:200ms}.hover\:bg-blue-700:hover{--tw-bg-opacity:1;background-color:rgb(29 78 216 / var(--tw-bg-opacity, 1))}.hover\:bg-green-700:hover{--tw-bg-opacity:1;background-color:rgb(21 128 61 / var(--tw-bg-opacity, 1))}</style></head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center px-4 py-10">
+
+  <div class="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md fade-in-up">
+    <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">All In One - Uploader</h2>
+    <form id="uploadForm" class="space-y-4" enctype="multipart/form-data">
+      <div>
+        <label class="block text-gray-600 mb-1">Pilih File</label>
+        <input type="file" name="file" required="" class="w-full px-3 py-2 border rounded-lg">
+      </div>
+      <div>
+        <select id="uploaderSelect" name="uploader" required="" class="w-full px-3 py-2 border rounded-lg"><option value="" disabled="" selected="">Pilih uploader</option><option value="smail.my.id/cloud">smail.my.id/cloud</option><option value="akmweb.youngjoygame.com">akmweb.youngjoygame.com</option><option value="amazonaws.com">amazonaws.com</option><option value="api.pixhost.to">api.pixhost.to</option><option value="catbox.moe">catbox.moe</option><option value="cdn.ypnk.biz.id">cdn.ypnk.biz.id</option><option value="cloudkuimages.guru">cloudkuimages.guru</option><option value="file.idnet.my.id">file.idnet.my.id</option><option value="nauval.cloud">nauval.cloud</option><option value="put.icu">put.icu</option><option value="qu.ax">qu.ax</option><option value="telegra.ph">telegra.ph</option><option value="tmpfiles.org">tmpfiles.org</option><option value="uguu.se">uguu.se</option><option value="upload.uploadcare.com">upload.uploadcare.com</option><option value="videy.co">videy.co</option><option value="www.pic.surf">www.pic.surf</option></select>
+      </div>
+      <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-200">Upload</button>
+    </form>
+    <div id="loading" class="hidden flex justify-center mt-4"><div class="spinner"></div></div>
+    <div id="result" class="mt-6 text-center text-sm"></div>
+  </div>
+
+  <!-- Sample Code Section -->
+  <div class="bg-white mt-8 p-6 rounded-2xl shadow-xl w-full max-w-md fade-in-up">
+    <h3 class="text-xl font-bold mb-4 text-gray-800">Contoh Request via Node.js</h3>
+    <p class="text-gray-600 mb-2">Gunakan kode berikut untuk mengunggah file dari server menggunakan <code>axios</code>:</p>
+    <button data-target="codeBlock1" class="copyBtn mb-2 bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 text-sm transition-all">Salin Kode</button>
+    <pre class="bg-gray-900 text-white text-sm p-4 rounded-lg overflow-auto"><code id="codeBlock1">const axios = require('axios');
+const axios = require('axios');
+const FormData = require('form-data');
+const fs = require('fs');
+
+async function uploadFile() {
+  const form = new FormData();
+  form.append('file', fs.createReadStream('./file-kamu.jpg'));
+  form.append('uploader', 'qu.ax');
+
+  try {
+    const res = await axios.post(`https://smail.my.id/uploader`, form, {
+      headers: form.getHeaders()
+    });
+
+    console.log('Sukses:', res.data);
+  } catch (err) {
+    console.error('Gagal:', err.response?.data || err.message);
+  }
+}
+
+uploadFile();</code></pre>
+  </div>
+
+  <div class="bg-white mt-8 p-6 rounded-2xl shadow-xl w-full max-w-md fade-in-up">
+    <h3 class="text-xl font-bold mb-4 text-gray-800">Untuk BOT WhatsApp</h3>
+    <p class="text-gray-600 mb-2">Gunakan kode berikut untuk mengunggah file lewat bot WhatsApp (type plugins + esm):</p>
+    <button data-target="codeBlock2" class="copyBtn mb-2 bg-blue-600 text-white px-4 py-1 rounded hover:bg-blue-700 text-sm transition-all">Salin Kode</button>
+    <pre class="bg-gray-900 text-white text-sm p-4 rounded-lg overflow-auto"><code id="codeBlock2">import axios from "axios";
+import FormData from "form-data";
+import fs from "fs";
+
+let handler = async (m, { conn, text, usedPrefix, command }) =&gt; {
+  let q = m.quoted || m;
+  let mime = (q.msg || q).mimetype || '';
+  let { data: list } = await axios.get(`https://smail.my.id/uploader/list`);
+  let capt = 'Kirim/reply media\n\nPilihan uploader:\n' + list.map((v, i) =&gt; `${i + 1}. ${v}`).join('\n') + `\n\nContoh: *${usedPrefix + command} 1*`;
+
+  if (!text || !mime) return m.reply(capt);
+  if (text &gt;= 1 &amp;&amp; text &lt;= list.length) {
+    let type = list[text - 1];
+    try {
+      m.react("⛅");
+      let res = await upload(await q.download(true), type);
+      m.reply(Object.entries(res).map(([k, v]) =&gt; `*${k}*: ${v}`).join('\n'));
+    } catch (e) {
+      m.reply("Terjadi kesalahan: " + e.message);
+    }
+  } else m.reply("Pilihan tidak valid");
+};
+
+handler.help = ["aioupload"];
+handler.command = /^((aio)?upload(er)?|tourl)$/i;
+export default handler;
+
+async function upload(path, type) {
+  const form = new FormData();
+  form.append('file', fs.createReadStream(path));
+  form.append('uploader', type);
+  try {
+    const { data } = await axios.post(`https://smail.my.id/uploader`, form, {
+      headers: form.getHeaders()
+    });
+    return data;
+  } catch (err) {
+    return err.response?.data || err.message;
+  }
+}</code></pre>
+  </div>
+
+  <!-- Download HTML Button Section -->
+<div class="bg-white mt-8 p-6 rounded-2xl shadow-xl w-full max-w-md fade-in-up">
+  <h3 class="text-xl font-bold mb-4 text-gray-800">Unduh Halaman Ini</h3>
+  <p class="text-gray-600 mb-4">Klik tombol di bawah untuk mengunduh salinan file HTML, Anda dapat menjalankan/hosting websitenya sendiri, serta dapat membuat kreasi tampilan web sesuka hati!.</p>
+  <button id="downloadHtmlBtn" class="w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition duration-200">
+    Unduh Halaman (.html)
+  </button>
+</div>
+
+<script>
+  document.getElementById('downloadHtmlBtn').addEventListener('click', () => {
+    const blob = new Blob([document.documentElement.outerHTML], { type: 'text/html' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'all-in-one-uploader.html';
+    a.click();
+    URL.revokeObjectURL(url);
+  });
+</script>
+
+  <!-- Floating Icon -->
+  <a href="/tip" target="_blank" rel="noopener noreferrer">
+    <img src="https://qu.ax/liWwh.png" alt="Floating Icon" style="position:fixed;bottom:20px;right:20px;width:60px;z-index:1000;cursor:pointer">
+  </a>
+
+  <!-- Scripts -->
+  <script>
+    window.addEventListener('DOMContentLoaded', async () => {
+      const select = document.getElementById('uploaderSelect');
+      try {
+        const res = await fetch('https://smail.my.id/uploader/list');
+        const data = await res.json();
+        select.innerHTML = '<option value="" disabled selected>Pilih uploader</option>';
+        data.forEach(item => {
+          const opt = document.createElement('option');
+          opt.value = item; opt.textContent = item;
+          select.appendChild(opt);
+        });
+      } catch {
+        select.innerHTML = '<option disabled selected>Gagal memuat uploader</option>';
+      }
+    });
+
+    document.getElementById('uploadForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const result = document.getElementById('result');
+      const loading = document.getElementById('loading');
+      result.innerHTML = ''; loading.classList.remove('hidden');
+
+      try {
+        const res = await fetch('https://smail.my.id/uploader', {
+          method: 'POST',
+          body: new FormData(e.target)
+        });
+        const json = await res.json();
+        loading.classList.add('hidden');
+
+        if (res.ok) {
+          result.innerHTML = `<div class="bg-green-100 text-green-800 px-4 py-2 rounded-md fade-in-up"><p class="font-semibold">${json.message}</p><a href="${json.link}" target="_blank" class="text-blue-600 underline break-all">${json.link}</a></div>`;
+        } else throw new Error(json.message || 'Gagal mengunggah');
+      } catch (err) {
+        loading.classList.add('hidden');
+        result.innerHTML = `<div class="bg-red-100 text-red-800 px-4 py-2 rounded-md fade-in-up"><p>❌ ${err.message}</p></div>`;
+      }
+    });
+
+    document.querySelectorAll('.copyBtn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const code = document.getElementById(btn.dataset.target).innerText;
+        navigator.clipboard.writeText(code).then(() => {
+          const txt = btn.innerText;
+          btn.innerText = 'Disalin!';
+          setTimeout(() => { btn.innerText = txt }, 1500);
+        });
+      });
+    });
+  </script>
+
+
+</body></html>
